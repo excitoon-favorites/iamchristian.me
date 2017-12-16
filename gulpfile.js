@@ -34,6 +34,19 @@ gulp.task('minify:css', function() {
       folder + '/**/*.html'
     ],
     ignore: [
+      'label',
+      /\.is-loading/,
+      /\.loaded/,
+      /\.is-ie/,
+      /\.scrollZone/,
+      /\.is-dragging/,
+      /\.is-dragged/,
+      /\.visible/,
+      /\.modal/,
+      /\.loading/,
+      /\.valid/,
+      /\.error/,
+      /\.inactive/
     ]
   };
 
