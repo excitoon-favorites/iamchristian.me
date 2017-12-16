@@ -1,7 +1,7 @@
 baseURL = "https://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
 [params]
 	copyright = "&copy; Christian Mendoza. Built with [Hugo](//gohugo.io) [[source](//github.com/christianmendoza)]"
