@@ -12,8 +12,8 @@ form {
 }
 
 #contact-form {
-  label.error {
-    margin: 0.2rem 0 0 0;
+  li.valid, label.valid, li.error, label.error {
+    font-weight: 700;
   }
 
   li.valid, label.valid {
@@ -22,6 +22,10 @@ form {
 
   li.error, label.error {
     color: $red;
+  }
+
+  label.error {
+    margin: 0.2rem 0 0 0;
   }
 }
 

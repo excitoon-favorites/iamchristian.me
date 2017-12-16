@@ -12,7 +12,7 @@
 		title = "About"
 		text = "Growing up with a deep interest in computers, technology and the web drove Christian to study computer science and apply his programming skills and knowledge to website creation. An array of work experiences and roles carved his path and ultimately led him to pursue entrepreneurship. Currently Christian enjoys building websites, ranging from small personal sites to full ecommerce stores."
 		image = "/assets/img/athens.jpg"
-		imageAlt = "Christian Mendoza"
+		imageAlt = "Athens, Greece"
 		panelId = "about"
 
 	# interests
@@ -48,7 +48,7 @@
 	[panel.experiences]
     title = "Experiences"
     image = "/assets/img/secaucus.jpg"
-    imageAlt = "Christian Mendoza"
+    imageAlt = "Secaucus, NJ"
 
 		# work
 		[[panel.experiences.work]]
