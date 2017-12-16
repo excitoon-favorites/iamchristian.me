@@ -2,3 +2,32 @@ baseURL = "https://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+
+[params]
+	copyright = "&copy; Christian Mendoza. Built with [Hugo](//gohugo.io) [[source](//github.com/christianmendoza)]"
+
+	# social icons
+  [[params.social]]
+    label = "christianmendoza"
+    icon = "fa-linkedin"
+    url = "https://linkedin.com/in/christianmendoza"
+
+  [[params.social]]
+    label = "@christianmendza"
+    icon = "fa-twitter"
+    url = "https://twitter.com/christianmendza"
+
+  [[params.social]]
+    label = "christianmendoza"
+    icon = "fa-github"
+    url = "https://github.com/christianmendoza"
+
+  [[params.social]]
+    label = "iamchristianmendoza"
+    icon = "fa-instagram"
+    url = "https://instagram.com/iamchristianmendoza"
+
+  [[params.social]]
+    label = "hello@iamchristian.me"
+    icon = "fa-envelope"
+    url = "mailto:hello@iamchristian.me"

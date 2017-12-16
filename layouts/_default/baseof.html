@@ -21,7 +21,7 @@
 				{{ block "main" . }}{{ end }}
 
 				<!-- copyright -->
-				<div class="copyright">&copy; Untitled.</div>
+				<div class="copyright">{{ .Site.Params.copyright | markdownify }}</div>
 
 			</div>
 

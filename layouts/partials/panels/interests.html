@@ -1,0 +1,18 @@
+<section class="panel color1">
+  <div class="intro joined">
+    <h2 class="major">{{ .Site.Data.content.panel.interests.title | markdownify }}</h2>
+    <ul class="alt">
+      {{ $characteristics := ( split .Site.Data.content.panel.interests.characteristics "|" ) }}
+      {{ range $characteristics }}
+        <li>{{ . | markdownify }}</li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="inner">
+    <ul class="grid-icons three connected">
+      {{ range .Site.Data.content.panel.interests.interest }}
+        <li><span class="icon {{ .icon }}"><span class="label">{{ .text }}</span></span></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
