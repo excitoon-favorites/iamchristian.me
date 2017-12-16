@@ -4,19 +4,19 @@
     <p>{{ .Site.Data.content.panel.contact.text | markdownify }}</p>
   </div>
   <div class="inner columns divided">
-    <div class="span-2-75">
-      <form method="post" href="#">
+    <div class="span-3">
+      <form method="post" id="contact-form" name="contact-form">
         <div class="field half">
-        	<label for="name">Name</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" placeholder="Name" required>
         </div>
         <div class="field half">
-        	<label for="email">Email</label>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email" placeholder="Email" required>
         </div>
         <div class="field">
-        	<label for="message">Message</label>
-          <textarea name="message" id="message" rows="4"></textarea>
+          <input type="url" name="url" id="url" placeholder="URL (optional)">
+        </div>
+        <div class="field">
+          <textarea name="message" id="message" rows="4" placeholder="Message" required></textarea>
         </div>
         <ul class="actions">
           <li><input type="submit" value="{{ .Site.Data.content.panel.contact.buttonLabel }}" class="button special"></li>
