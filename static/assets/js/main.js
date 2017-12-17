@@ -16,7 +16,7 @@
 						enabled: true,
 
 					// Sets the distance to scroll when using the left/right arrow keys.
-						distance: 50
+						distance: 150
 
 				},
 
@@ -27,7 +27,7 @@
 						enabled: true,
 
 					// Sets the scroll wheel factor. (Ideally) a value between 0 and 1 (lower = slower scroll, higher = faster scroll).
-						factor: 1
+						factor: 0.75
 
 				},
 
@@ -60,7 +60,7 @@
 				excludeSelector: 'input:focus, select:focus, textarea:focus, audio, video, iframe',
 
 			// Link scroll speed.
-				linkScrollSpeed: 1000
+				linkScrollSpeed: 1500
 
 		};
 
