@@ -1,0 +1,22 @@
+{{ $dateformat := "Jan 2006" }}
+
+<section class="panel spotlight medium">
+  <div class="inner columns divided">
+    <div class="span-4-75">
+      <h2 class="major">{{ .Site.Data.content.panel.experiences.title }}</h2>
+      <h3>Work</h3>
+      {{ range sort .Site.Data.content.panel.experiences.work "startdate" "desc" }}
+        <p><strong>{{ dateFormat $dateformat .startdate }} &ndash; {{ if ne .enddate "" }}{{ dateFormat $dateformat .enddate }}{{ else }}Present{{ end }}</strong><br>{{ .position }}, <em>{{ .company }}</em></p>
+      {{ end }}
+    </div>
+    <div class="span-4-25">
+      <h3>Education</h3>
+      {{ range sort .Site.Data.content.panel.experiences.education "order" "desc" }}
+        <p><strong>{{ .studytype }}, {{ .area }}</strong><br><em>{{ .institution }}</em></p>
+      {{ end }}
+    </div>
+  </div>
+  <div class="image filtered tinted" data-position="center">
+    <img src="{{ .Site.Data.content.panel.experiences.image }}" alt="{{ .Site.Data.content.panel.experiences.imageAlt }}">
+  </div>
+</section>

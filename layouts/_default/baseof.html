@@ -1,0 +1,38 @@
+<!doctype html>
+<!--
+	Ethereal by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		{{ partial "head" . }}
+	</head>
+
+	<body>
+
+		<!-- page wrapper -->
+		<div id="page-wrapper">
+
+			<!-- wrapper -->
+			<div id="wrapper">
+
+				<!-- main content -->
+				{{ block "main" . }}{{ end }}
+
+				<!-- copyright -->
+				<div class="copyright">{{ .Site.Params.copyright | markdownify }}</div>
+
+			</div>
+
+		</div>
+
+		<!-- scripts -->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/skel.min.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/form/jquery.validate.min.js"></script>
+		<script src="/assets/js/form/contactform.js"></script>
+
+	</body>
+</html>

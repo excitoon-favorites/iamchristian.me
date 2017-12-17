@@ -1,0 +1,37 @@
+baseURL = "https://iamchristian.me/"
+languageCode = "en-us"
+title = "Christian Mendoza / Entrepreneur / Front End Developer"
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+
+[params]
+  name = "Christian Mendoza"
+  description = "Christian Mendoza is an entrepreneur and experienced Front End Developer, bringing your ideas into a web reality."
+  twitter = "christianmendza"
+  themeColor = "#355E90"
+  copyright = "&copy; Christian Mendoza. Built with [Hugo](//gohugo.io) / [[source](//github.com/christianmendoza/iamchristian.me)]"
+
+  # social icons
+  [[params.social]]
+    label = "christianmendoza"
+    icon = "fa-linkedin"
+    url = "https://linkedin.com/in/christianmendoza"
+
+  [[params.social]]
+    label = "@christianmendza"
+    icon = "fa-twitter"
+    url = "https://twitter.com/christianmendza"
+
+  [[params.social]]
+    label = "christianmendoza"
+    icon = "fa-github"
+    url = "https://github.com/christianmendoza"
+
+  [[params.social]]
+    label = "crishchun"
+    icon = "fa-instagram"
+    url = "https://instagram.com/crishchun"
+
+  [[params.social]]
+    label = "hello@iamchristian.me"
+    icon = "fa-envelope"
+    url = "mailto:hello@iamchristian.me"

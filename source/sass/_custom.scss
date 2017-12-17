@@ -1,0 +1,35 @@
+// Colors.
+$green: #62bd83;
+$red: #f56a6a;
+
+// Form.
+form {
+  input {
+    &.is-hidden {
+      display: none;
+    }
+  }
+}
+
+#contact-form {
+  li.valid, label.valid, li.error, label.error {
+    font-weight: 700;
+  }
+
+  li.valid, label.valid {
+    color: $green;
+  }
+
+  li.error, label.error {
+    color: $red;
+  }
+
+  label.error {
+    margin: 0.2rem 0 0 0;
+  }
+}
+
+// Experiences panel.
+ul.alt.experiences li {
+  border: none;
+}

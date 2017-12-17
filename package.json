@@ -1,0 +1,29 @@
+{
+  "name": "iamchristian.me",
+  "version": "1.0.0",
+  "description": "Building site for iamchristian.me",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rm -rfv public && hugo",
+    "build": "rm -rfv public && hugo && gulp",
+    "deploy:prod": "hugo",
+    "postdeploy:prod": "gulp",
+    "serve:verbose": "hugo server --verboseLog",
+    "serve:noreload": "hugo server --disableLiveReload"
+  },
+  "author": "Christian Mendoza",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-total-task-time": "^0.1.0",
+    "gulp-uncss": "^1.0.6",
+    "lazypipe": "^1.0.1",
+    "run-sequence": "^2.2.0"
+  }
+}

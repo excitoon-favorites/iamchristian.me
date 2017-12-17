@@ -1,0 +1,103 @@
+### PANELS ###
+
+# banner
+[panel.banner]
+  title = "Christian Mendoza"
+  text = "Entrepreneur and experienced Front End Developer, bringing your ideas into a web reality."
+  image = "/assets/img/christian.jpg"
+  imageAlt = "Christian Mendoza"
+
+# about
+[panel.about]
+  title = "About"
+  text = "Growing up with a deep interest in computers, technology and the web drove Christian to study computer science and apply his programming skills and knowledge to website creation. An array of work experiences and roles carved his path and ultimately led him to pursue entrepreneurship. Currently Christian enjoys building websites, ranging from small personal sites to full ecommerce stores."
+  image = "/assets/img/athens.jpg"
+  imageAlt = "Athens, Greece"
+  panelId = "about"
+
+# interests
+[panel.interests]
+  title = "A little bit more&hellip;"
+  characteristics = "Web coder|Idea creator|Logical thinker|Passionate wanderer|Avid photographer|Rubik's cube solver|Snowboarding tricks pretender"
+
+[[panel.interests.interest]]
+  text = "Coder"
+  icon = "fa-code"
+
+[[panel.interests.interest]]
+  text = "Thinker"
+  icon = "fa-lightbulb-o"
+
+[[panel.interests.interest]]
+  text = "Creator"
+  icon = "fa-flask"
+
+[[panel.interests.interest]]
+  text = "Wanderer"
+  icon = "fa-laptop"
+
+[[panel.interests.interest]]
+  text = "Traveler"
+  icon = "fa-plane"
+
+[[panel.interests.interest]]
+  text = "Photographer"
+  icon = "fa-camera-retro"
+
+# experiences
+[panel.experiences]
+  title = "Experiences"
+  image = "/assets/img/secaucus.jpg"
+  imageAlt = "Secaucus, NJ"
+
+# work
+[[panel.experiences.work]]
+  startdate = "2014-04-01"
+  enddate = "2014-12-31"
+  position = "Manager of Web Production"
+  company = "Kaplan Test Prep"
+
+[[panel.experiences.work]]
+  startdate = "2015-01-01"
+  enddate = "2015-09-30"
+  position = "Front End Developer"
+  company = "ScrollMotion, Inc."
+
+[[panel.experiences.work]]
+  startdate = "2015-09-01"
+  enddate = "2016-09-30"
+  position = "Front End Engineer"
+  company = "WIRED"
+
+[[panel.experiences.work]]
+  startdate = "2017-02-01"
+  enddate = ""
+  position = "Owner"
+  company = "CAM Creation Labs, LLC"
+
+# education
+[[panel.experiences.education]]
+  studytype = "B.A."
+  area = "Computer Science"
+  institution = "Rutgers University"
+  order = 1
+
+[[panel.experiences.education]]
+  studytype = "Certificate"
+  area = "Back End Web Development"
+  institution = "General Assembly"
+  order = 2
+
+# contact
+[panel.contact]
+  title = "Get in touch"
+  text = "If you have any questions, please feel free to drop a line. If you don't get an answer immediately, Christian might just be traveling through the middle of nowhere. He'll get back to you as soon as he can. That's a promise."
+  buttonLabel = "Send Message"
+  honeypot = "bot-field"
+
+# 404 page
+[panel.page404]
+  title = "<i class=\"icon fa-exclamation-circle\"></i> 404: Page Not Found"
+  subtitle = "Sorry, that page can't be found <i class=\"icon fa-frown-o\"></i>"
+  image = "/assets/img/404.jpg"
+  imageAlt = "404: Page Not Found"

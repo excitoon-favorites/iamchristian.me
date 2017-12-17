@@ -1,0 +1,5 @@
+# Redirect with 301
+/ /ndoza/ 301
+
+# Rewrite paths
+/ndoza/ /index.html 200

@@ -1,0 +1,38 @@
+<section class="panel color4-alt">
+  <div class="intro color4">
+    <h2 class="major">{{ .Site.Data.content.panel.contact.title }}</h2>
+    <p>{{ .Site.Data.content.panel.contact.text | markdownify }}</p>
+  </div>
+  <div class="inner columns divided">
+    <div class="span-3">
+      <form method="post" id="contact-form" name="contact-form" netlify-honeypot="{{ .Site.Data.content.panel.contact.honeypot }}" data-netlify="true">
+        <div class="field half">
+          <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
+        <div class="field half">
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="field">
+          <input type="url" name="url" id="url" placeholder="URL (optional)">
+        </div>
+        <div class="field">
+          <textarea name="message" id="message" rows="4" placeholder="Message" required></textarea>
+          <input type="text" name="{{ .Site.Data.content.panel.contact.honeypot }}" class="is-hidden">
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="{{ .Site.Data.content.panel.contact.buttonLabel }}" class="button special"></li>
+          <li><input type="reset" value="Reset" class="button"></li>
+        </ul>
+      </form>
+    </div>
+    <div class="span-1-5">
+      {{ if .Site.Params.social }}
+        <ul class="contact-icons color2">
+          {{ range .Site.Params.social }}
+            <li class="icon {{ .icon }}"><a href="{{ .url }}">{{ .label }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  </div>
+</section>
