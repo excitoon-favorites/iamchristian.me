@@ -1,0 +1,9 @@
+{{ $navItems := where .Site.RegularPages "Type" "secondary" }}
+
+<nav id="nav">
+  <ul class="actions vertical special spinY">
+    {{ range $navItems }}
+      <li><a href="#{{ .File.TranslationBaseName }}" class="button">{{ .Params.navLabel }}</a></li>
+    {{ end }}
+  </ul>
+</nav>

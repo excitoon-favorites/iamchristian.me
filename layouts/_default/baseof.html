@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<!--
+Indivisible by Pixelarity
+pixelarity.com | hello@pixelarity.com
+License: pixelarity.com/license
+-->
+<html>
+  <head>
+    {{ partial "head" . }}
+  </head>
+
+  <body class="is-loading-0 is-loading-1">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main Content -->
+      {{ block "main" . }}{{ end }}
+
+      <!-- Footer -->
+      {{ partial "footer" . }}
+
+    </div>
+
+    <!-- Scripts -->
+    {{ partial "scripts" . }}
+
+  </body>
+</html>

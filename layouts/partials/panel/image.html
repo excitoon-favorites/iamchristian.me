@@ -1,0 +1,5 @@
+{{ if .Params.image }}
+  <div class="image">
+    <img src="{{ .Params.image }}" alt="{{ with .Params.imageAlt }}{{ . }}{{ end }}" data-position="{{ if .Params.imagePosition }}{{ .Params.imagePosition }}{{ else }}center center{{ end }}" />
+  </div>
+{{ end }}

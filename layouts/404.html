@@ -1,0 +1,7 @@
+{{ define "main" }}
+  
+  {{ with .Site.GetPage "page" "panel/page404.md" }}
+    {{ .Render "404" }}
+  {{ end }}
+
+{{ end }}

@@ -1,0 +1,30 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+
+[params]
+
+  # Metadata
+  copyright = "&copy; Untitled"
+
+  # social icons
+  [[params.social]]
+    label = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com/"
+
+  [[params.social]]
+    label = "Facebook"
+    icon = "fa-facebook"
+    url = "https://facebook.com/"
+
+  [[params.social]]
+    label = "GitHub"
+    icon = "fa-github"
+    url = "https://github.com/"
+
+  [[params.social]]
+    label = "Email"
+    icon = "fa-envelope"
+    url = "mailto:name@domain.com"

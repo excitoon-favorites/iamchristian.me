@@ -1,0 +1,15 @@
+{{ $contactPage := eq .File.TranslationBaseName "contact" }}
+
+<article id="{{ .File.TranslationBaseName }}" class="panel secondary">
+  {{ partial "panel/image" . }}
+  <div class="content">
+    {{ partial "panel/btn-back" . }}
+    <div class="inner">
+      {{ partial "panel/header" . }}
+      {{ .Content }}
+      {{ if $contactPage }}
+        {{ partial "form" . }}
+      {{ end }}
+    </div>
+  </div>
+</article>
