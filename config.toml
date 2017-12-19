@@ -10,6 +10,8 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robots
 
     # CSS
   css = [
+    "/assets/css/google-fonts.css",
+    "/assets/css/font-awesome.min.css",
     "/assets/css/main.css"
   ]
 
