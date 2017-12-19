@@ -4,11 +4,30 @@ title = "Christian Mendoza / Entrepreneur / Front End Developer"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
 
 [params]
+
+  # metadata
   name = "Christian Mendoza"
   description = "Christian Mendoza is an entrepreneur and experienced Front End Developer, bringing your ideas into a web reality."
+  socialImage = "/assets/img/social.jpg"
   twitter = "christianmendza"
   themeColor = "#355E90"
   copyright = "&copy; Christian Mendoza. Built with [Hugo](//gohugo.io) / [[source](//github.com/christianmendoza/iamchristian.me)]"
+
+  # css
+  css = [
+    "/assets/css/google-fonts.css",
+    "/assets/css/font-awesome.css",
+    "/assets/css/main.css"
+  ]
+
+  # js
+  js = [
+    "/assets/js/jquery.min.js",
+    "/assets/js/skel.min.js",
+    "/assets/js/main.js",
+    "/assets/js/form/jquery.validate.min.js",
+    "/assets/js/form/contactform.js"
+  ]
 
   # social icons
   [[params.social]]

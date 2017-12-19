@@ -10,19 +10,19 @@
 {{ with .Site.Title }}<meta property="og:title" content="{{ . }}">{{ end }}
 {{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}">{{ end }}
 <meta property="og:url" content="{{ .Site.BaseURL }}">
-<meta property="og:image" content="{{ .Site.BaseURL }}assets/img/social.jpg">
 <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
+{{ with .Site.Params.socialImage }}<meta property="og:image" content="{{ . | absURL }}" />
+<meta name="twitter:card" content="summary_large_image" />{{ end }}
 {{ with .Site.Params.twitter }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
 
 <title>{{ .Title }}</title>
 
 <link href="{{ .Site.BaseURL }}" rel="canonical">
-<link href="/favicon.ico" rel="icon">
 
-<link rel="stylesheet" href="/assets/css/google-fonts.css" inline>
-<link rel="stylesheet" href="/assets/css/font-awesome.css" inline>
-<link rel="stylesheet" href="/assets/css/main.css" inline>
+{{ range .Site.Params.css -}}
+  <link rel="stylesheet" href="{{ . }}" inline>
+{{ end -}}
+
 <noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
 
 <script type="application/ld+json">

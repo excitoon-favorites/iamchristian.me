@@ -21,18 +21,14 @@
         {{ block "main" . }}{{ end }}
 
         <!-- copyright -->
-        <div class="copyright">{{ .Site.Params.copyright | markdownify }}</div>
+        <div class="copyright">{{ .Site.Copyright | markdownify }}</div>
 
       </div>
 
     </div>
 
     <!-- scripts -->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/skel.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/form/jquery.validate.min.js"></script>
-    <script src="/assets/js/form/contactform.js"></script>
+    {{ partial "scripts" . }}
 
   </body>
 </html>
