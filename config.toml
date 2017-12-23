@@ -1,14 +1,18 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Christian Mendoza / Entrepreneur / Front End Developer"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+copyright = "&copy; Christian Mendoza. Built with [Hugo](//gohugo.io) / [[source](//github.com/christianmendoza/iamchristian.me)]"
 
 [params]
 
   # Metadata
-  copyright = "&copy; Untitled"
+  name = "Christian Mendoza"
+  description = "Christian Mendoza is an entrepreneur and experienced Front End Developer, bringing your ideas into a web reality."
+  twitter = "christianmendza"
+  themeColor = "#355E90"
 
-    # CSS
+  # CSS
   css = [
     "/assets/css/google-fonts.css",
     "/assets/css/font-awesome.min.css",
@@ -23,23 +27,23 @@ disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robots
     "/assets/js/main.js"
   ]
 
-  # social icons
+  # Social Icons
+  [[params.social]]
+    label = "LinkedIn"
+    icon = "fa-linkedin"
+    url = "https://linkedin.com/in/christianmendoza"
+
   [[params.social]]
     label = "Twitter"
     icon = "fa-twitter"
-    url = "https://twitter.com/"
+    url = "https://twitter.com/christianmendza"
 
   [[params.social]]
-    label = "Facebook"
-    icon = "fa-facebook"
-    url = "https://facebook.com/"
+    label = "Instagram"
+    icon = "fa-instagram"
+    url = "https://instagram.com/crishchun"
 
   [[params.social]]
     label = "GitHub"
     icon = "fa-github"
-    url = "https://github.com/"
-
-  [[params.social]]
-    label = "Email"
-    icon = "fa-envelope"
-    url = "mailto:name@domain.com"
+    url = "https://github.com/christianmendoza"

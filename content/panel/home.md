@@ -1,10 +1,10 @@
 +++
 weight = 1
 type = "special"
-title = "Indivisible"
-description = "Ipsum feugiat lorem sed magna<br />etiam adipiscing phasellus"
+title = "Christian Mendoza"
+description = "Entrepreneur / Front End Developer"
 image = "/assets/img/pic01.jpg"
-imageAlt = "Home alt"
+imageAlt = ""
 imagePosition = "center center"
 navLabel = "Home"
 +++
