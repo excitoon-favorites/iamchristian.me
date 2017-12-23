@@ -34,6 +34,11 @@ gulp.task('minify:css', function() {
       folder + '/**/*.html'
     ],
     ignore: [
+      /\.active/,
+      /\.inactive/,
+      /\.loading/,
+      /\.valid/,
+      /\.error/
     ]
   };
 
