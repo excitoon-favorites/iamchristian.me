@@ -12,9 +12,9 @@ $contactForm.validate({
       },
       complete: function(data) {
         // console.log( data );
-        $contactForm.find('li.loading').hide();
+        $contactForm.find('ul.actions li.loading').remove();
         $contactForm.find('ul.actions').append('<li class="valid">Message sent!</li>');
-        $contactForm.find('li.valid').fadeOut(5000);
+        $contactForm.find('ul.actions li.valid').fadeOut(5000, function() { $(this).remove(); });
         $contactForm[0].reset();
       }
     });
