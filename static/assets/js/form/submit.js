@@ -1,5 +1,7 @@
 var $contactForm = $('#contact-form');
 $contactForm.validate({
+  debug: false,
+  onsubmit: true,
   submitHandler: function(form) {
     $.ajax({
       url: form.action,
@@ -8,6 +10,7 @@ $contactForm.validate({
       dataType: 'json',
       beforeSend: function() {
         // console.log( $(form).serialize() );
+        $contactForm.find('ul.actions li.valid').remove();
         $contactForm.find('ul.actions').append('<li class="loading">Sending message&hellip;</li>');
       },
       complete: function(data) {
