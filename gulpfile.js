@@ -78,7 +78,7 @@ gulp.task('minify:html', function() {
 gulp.task('sass', function() {
   return gulp.src('./source/sass/**/*.scss')
     .pipe(sass({
-      outputStyle: 'compressed',
+      outputStyle: 'expanded',
       errLogToConsole: true
     }).on('error', sass.logError))
     .pipe(gulp.dest('./static/assets/css'));

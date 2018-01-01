@@ -24,6 +24,10 @@ form {
     color: $red;
   }
 
+  input.error, textarea.error {
+    border-color: $red;
+  }
+
   label.error {
     margin: 0.2rem 0 0 0;
   }

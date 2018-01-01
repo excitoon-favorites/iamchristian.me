@@ -1,14 +1,17 @@
 baseURL = "https://iamchristian.me/"
 languageCode = "en-us"
 title = "Christian Mendoza / Entrepreneur / Front End Developer"
-disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT"]
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+copyright = "&copy; Christian Mendoza. Built with [Hugo](//gohugo.io) / [[source](//github.com/christianmendoza/iamchristian.me)]"
 
 [params]
+
+  # metadata
   name = "Christian Mendoza"
   description = "Christian Mendoza is an entrepreneur and experienced Front End Developer, bringing your ideas into a web reality."
+  socialImage = "/assets/img/social.jpg"
   twitter = "christianmendza"
   themeColor = "#355E90"
-  copyright = "&copy; Christian Mendoza. Built with [Hugo](//gohugo.io) / [[source](//github.com/christianmendoza/iamchristian.me)]"
 
   # social icons
   [[params.social]]

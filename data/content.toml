@@ -94,10 +94,3 @@
   text = "If you have any questions, please feel free to drop a line. If you don't get an answer immediately, Christian might just be traveling through the middle of nowhere. He'll get back to you as soon as he can. That's a promise."
   buttonLabel = "Send Message"
   honeypot = "bot-field"
-
-# 404 page
-[panel.page404]
-  title = "<i class=\"icon fa-exclamation-circle\"></i> 404: Page Not Found"
-  subtitle = "Sorry, that page can't be found <i class=\"icon fa-frown-o\"></i>"
-  image = "/assets/img/404.jpg"
-  imageAlt = "404: Page Not Found"
