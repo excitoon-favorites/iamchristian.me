@@ -1,5 +1,6 @@
 # Redirect with 301
 / /ndoza/ 301
+/philippines2018 https://youtu.be/3594028Ox7Q
 
 # Rewrite paths
 /ndoza/ /index.html 200
